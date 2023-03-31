@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    position: absolute;
+    transition: 0.5s;
+    overflow: hidden;
+    background-color: rgb(27, 27, 95);
+    color: white;
+    font-weight: bold;
+}
+
+.header.isExpend{
+    height: 250px;
+}
+
+.header .menu-btn{
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    border: none;
+    background-color: rgb(72, 202, 159);
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.header .menu-btn.highlight{
+    border: 5px solid white;
+}
+
+.header .menu-detail{
+    position: absolute;
+    top: 80px;
+    list-style: none;
+}
+
+.header .menu-detail li{
+    height: 50px;
+    cursor: pointer;
+}
+
+.header .menu-detail li:hover{
+    color: rgb(72, 202, 159);
+}
+
+@media only screen and (min-width : 1000px){
+    .header{
+        height: 100px;
+    }
+    
+    .header .menu-btn{
+        display: none;
+    }
+    
+    .header .menu-detail{
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        transform: translate(0, -50%);
+        list-style: none;
+        display: flex;
+    }
+
+    .header .menu-detail li{
+        margin-right: 40px;
+    }
+}
