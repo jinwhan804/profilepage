@@ -9,15 +9,54 @@
 </head>
 <body>
     <div class="header">
+        <div class="page-name"><a href="#main-area">HEAD</a></div>
         <button class="menu-btn" onclick="menu()">MENU</button>
         <ul class="menu-detail">
-            <li>PORTFOLIO</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
+            <li class="moveBtn"><a href="#profile-area">PROFILE</a></li>
+            <li class="moveBtn"><a href="#project-area">PROJECTS</a></li>
+            <li class="moveBtn"><a href="#contact-area">CONTACT</a></li>
         </ul>
+    </div>
+    <div id="main-area">
+        <div class="main-font">
+            <h1>WELLCOME</h1>
+            <p>Web Designer</p>
+        </div>
+    </div>
+    <div id="profile-area">
+        <div class="area-name"><h1>PROFILE</h1></div>
+        <div class="profile">
+            <div class="profile-img"></div>
+            <ul class="simple-profile">
+                <li>
+                    <span class="name-tag">이름 : </span>
+                    <span>구진완</span>
+                </li>
+                <li>
+                    <span class="name-tag">전화번호 : </span>
+                    <span>000-0000-0000</span>
+                </li>
+                <li>
+                    <span class="name-tag">이메일 : </span>
+                    <span>jinwhan2006@naver.com</span>
+                </li>
+                <li>
+                    <span class="name-tag">블로그 : </span>
+                    <span>https://blog.naver.com/jinwhan2006</span>
+                </li>
+            </ul>
+        </div>
+        <div class="history"></div>
+    </div>
+    <div id="project-area">
+        <div class="area-name"><h1>PROJECTS</h1></div>
+    </div>
+    <div id="contact-area">
+        <div class="area-name"><h1>CONTACT</h1></div>
     </div>
 </body>
 <script src="./index.js"></script>
 </html>
 
-<!-- https://startbootstrap.com/previews/freelancer -->
+<!-- https://startbootstrap.com/previews/freelancer 
+     https://bitkunst.co.kr/ -->
